@@ -1,6 +1,0 @@
-#!/system/bin/sh
-#
-# nvram 
-#
-sleep 5
-setprop service.nvram_init Ready
