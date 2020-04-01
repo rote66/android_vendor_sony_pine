@@ -56,6 +56,26 @@ LOCAL_SRC_FILES_32 := proprietary/vendor/lib/libaudiocustparam.so
 LOCAL_PROPRIETARY_MODULE := true
 include $(BUILD_PREBUILT)
 
+include $(CLEAR_VARS)
+LOCAL_MODULE := libion_mtk
+LOCAL_MODULE_CLASS := SHARED_LIBRARIES
+LOCAL_MODULE_SUFFIX := .so
+LOCAL_MULTILIB := both
+LOCAL_SRC_FILES_64  := proprietary/vendor/lib64/libion_mtk.so
+LOCAL_SRC_FILES_32 := proprietary/vendor/lib/libion_mtk.so
+LOCAL_PROPRIETARY_MODULE := true
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := libgralloc_extra
+LOCAL_MODULE_CLASS := SHARED_LIBRARIES
+LOCAL_MODULE_SUFFIX := .so
+LOCAL_MULTILIB := both
+LOCAL_SRC_FILES_64  := proprietary/vendor/lib64/libgralloc_extra.so
+LOCAL_SRC_FILES_32 := proprietary/vendor/lib/libgralloc_extra.so
+LOCAL_PROPRIETARY_MODULE := true
+include $(BUILD_PREBUILT)
+
 #include $(CLEAR_VARS)
 #LOCAL_MODULE = libstagefright_color_conversion
 #LOCAL_MODULE_CLASS = STATIC_LIBRARIES
